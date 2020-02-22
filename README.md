@@ -65,14 +65,17 @@ $ cd path/to/your/directory/
 $ for x in *.pdf
 $ do
 $ ./d2b "$x" "file.bib"
-$ "done"
+$ done
 ```
+
+where `path/to/your/directory` and `file.bib` are replaced with the folder where your PDF articles are stored and the name of your bibliography file, respectively. This will run the script *d2b* on every PDF file and gather the bibliography information into `file.bib`.
+
+Remember to double check your file to ensure that a BibTeX entry is found for every article. If there is an error in the DOI extraction, search for the DOI number yourself and run the script with the number instead of filename.
 
 ### See It In Action
 
 ![](preview_multi.gif)
 
+## License
 
-where `path/to/your/directory` and `file.bib` are replaced with the folder where your PDF articles are stored and the name of your bibliography file, respectively. This will run the script *d2b* on every PDF file and gather the bibliography information into `file.bib`.
-
-Please double check your file to ensure that a BibTeX entry is found for every article. If there is an error in the DOI extraction, search for the DOI number yourself and run the script with the number instead of filename.
+This script is licensed under [MIT](LICENSE.md). Thank you to [Conner McDaniel](https://www.youtube.com/watch?v=nO4T8JDNYG0) for the idea.
