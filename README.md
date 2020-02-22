@@ -22,17 +22,17 @@ If you are familiar with git, or would like to [get git](https://git-scm.com/dow
 $ git clone https://gitlab.com/maister/doi2bib.git
 ```
 
-However, if "git" just looks like a funny word to you and you're tired of getting another program, you can download this script the traditional way using the download button between the "Find file" and the blue "Clone" button in the upper right corner of this page. Then, extract the file using your favorite file extractor.
+However, if "git" just looks like a funny word to you, you can download this script the traditional way using the download button between the "Find file" and the blue "Clone" buttons in the upper right corner of this page. Then, extract the file using your favorite file extractor.
 
 ## Usage
 
-Open your terminal application and type:
+Firstly, move the d2b file to the folder where your PDF articles are stored. Then, open your terminal application and type:
 
 ```
 $ cd path/to/your/directory/
 ```
 
-where `path/to/your/directory/` is replaced with the path to your where your PDF articles are stored.
+where `path/to/your/directory/` is replaced with the path to your PDF folder. **Note**, you do not type the `$`.
 
 Then, run the script like so:
 
