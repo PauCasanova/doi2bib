@@ -13,3 +13,4 @@ fi
 
 echo >> "$2"
 curl -s "http://api.crossref.org/works/$doi/transform/application/x-bibtex" >> "$2"
+echo >> "$2"
