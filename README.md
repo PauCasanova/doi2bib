@@ -26,7 +26,7 @@ However, if "git" just looks like a funny word to you, you can download this scr
 
 ## Usage
 
-Firstly, move the d2b file to the folder where your PDF articles are stored. Then, open your terminal application and type:
+First, move the file named `d2b` into the folder where your PDF articles are stored. Then, open your terminal application and type:
 
 ```
 $ cd path/to/your/directory/
