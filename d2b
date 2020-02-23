@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
-[ -z "$1" ] && printf "Provide a PDF file or a DOI and a BibTeX file \n  d2b [filename/DOI] [file]\n" && exit
+[ -z "$1" ] && printf "Provide a PDF filename or a DOI number and a BibTeX file \n  d2b [filename/DOI] [file]\n" && exit
 
 if [ -f "$1" ]; then
 	doi=$(pdfinfo "$1" | grep -io "doi:.*" | grep -o "10.*") ||
@@ -11,6 +11,6 @@ else
 	doi="$1"
 fi
 
-echo >> "$2"
-curl -s "http://api.crossref.org/works/$doi/transform/application/x-bibtex" >> "$2"
-echo >> "$2"
+echo "Downloading bibliographies..."
+curl -s "http://api.crossref.org/works/$doi/transform/application/x-bibtex" -w '\n\n' >> "$2"
+echo "Done!"
